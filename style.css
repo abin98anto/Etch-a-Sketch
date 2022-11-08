@@ -1,5 +1,47 @@
+body {
+    margin: 0px;
+    background-color: #c2dde6;
+    color: white;
+}
+#allIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #container {
     height: 500px;
     width: 500px;
     display: grid;
 }
+
+.buttons button {
+    border-radius: 12px;
+    border: none;
+    padding: 1vh;
+    background-color: beige;
+  }
+
+  .blackButton:hover {
+    background-color: black;
+    color: white;
+  }
+  .randomButton:hover {
+    background-color: greenyellow;
+    color: red;
+  }
+  .eraserButton:hover {
+    background-color: white;
+  }

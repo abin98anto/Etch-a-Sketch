@@ -9,13 +9,13 @@
 </head>
 <body>
     <div id="allIn">
-        <div class="heading"><h1>Etch-a-Sketch</h1></div>
+        <div class="heading"><h1 id="h1heading">Etch-a-Sketch</h1></div>
         <div class="main">
             <div id="container"></div><br>
             <div class="buttons">
-                <button onclick="changeColour('black')">Black</button>
-                <button onclick="changeColour('random')">Colour</button>
-                <button onclick="changeColour('white')">Eraser</button>
+                <button class="blackButton" onclick="changeColour('black')">Black</button>
+                <button class="randomButton" onclick="changeColour('random')">Colour</button>
+                <button class="eraserButton" onclick="changeColour('white')">Eraser</button>
                 <button onclick="reset()">Reset</button><br><br>
                 <input id="sizeInput" type="text" placeholder="Size of board" value="16" onchange="sizeSelector(this.value)"><button>Set Size</button>
             </div>

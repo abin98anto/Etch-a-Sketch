@@ -28,7 +28,10 @@ function sizeSelector(value) {
 
 function squareColour() {
     if(colour === "random"){
-        this.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+        let bColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+        let h1 = document.getElementById("h1heading");
+        this.style.backgroundColor = bColor;
+        h1.style.color = bColor;
     }else {
     this.style.backgroundColor = colour;
     }
@@ -36,6 +39,8 @@ function squareColour() {
 
 function changeColour(choice) {
     colour = choice;
+    let h1 = document.getElementById("h1heading");
+    h1.style.color = choice;
 }
 
 function reset(){
